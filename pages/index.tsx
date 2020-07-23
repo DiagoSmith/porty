@@ -1,14 +1,9 @@
-import Link from 'next/link';
 import Layout from '../components/Layout';
 
+//eslint-disable-next-line
 const IndexPage = () => (
-    <Layout title="Home | Next.js + TypeScript Example">
-        <h1>Hello Next.js 👋</h1>
-        <p>
-            <Link href="/about">
-                <a>About</a>
-            </Link>
-        </p>
+    <Layout title="Home | Roberto Floris">
+        <h1>Roberto Floris</h1>
     </Layout>
 );
 

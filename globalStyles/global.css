@@ -1,0 +1,15 @@
+@font-face {
+    font-family: Road Rage;
+    src: url('/fonts/Road_Rage.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    background: black;
+}
+
+h1 {
+    color: green;
+    font-family: 'Road Rage';
+    font-size: 70px;
+}
