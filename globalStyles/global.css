@@ -1,15 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 @font-face {
     font-family: Road Rage;
     src: url('/fonts/Road_Rage.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: Andrea Bellarosa;
+    src: url('/fonts/Andrea_Bellarosa.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --main-color: rgb(207, 42, 125);
+    --pane-padding: 5px 42px;
+}
+
 html {
     background: black;
+    font-size: 10px;
 }
 
 h1 {
-    color: green;
+    color: rgb(207, 42, 125);
     font-family: 'Road Rage';
-    font-size: 70px;
+    font-size: 8rem;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 1px rgb(61, 158, 249);
+}
+h2 {
+    font-family: 'Satisfy', cursive;
+    font-size: 5rem;
+    background-clip: text;
+    background-color: rgb(196, 106, 223);
+    background-size: 100%;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to bottom, rgb(237, 177, 48) 40%, rgb(255, 247, 233));
 }
