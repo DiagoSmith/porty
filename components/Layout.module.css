@@ -9,12 +9,13 @@
     position: absolute;
     width: 100%;
     height: 100vh;
-    transform: perspective(100vw) rotateX(60deg);
+    /* transform: perspective(100vw); */
     background: black;
     background-image: repeating-linear-gradient(rgb(9, 54, 97) 0 2px, transparent 1px 100%),
         repeating-linear-gradient(90deg, rgb(9, 54, 97) 0 2px, transparent 1px 100%);
     background-size: 100px 100px;
-    animation: animate-background linear 2s infinite;
+    animation: animate-background linear 1s infinite, three-dimensional-freaky 7s 1 forwards;
+    /* animation: animate-background linear 2s infinite; */
     z-index: -300;
     overflow: hidden;
 }
@@ -27,11 +28,21 @@
     border-top: 100px solid red;
 }
 
+/* FIX-ME: stick to transform otherwise we are gonna have a bad time */
 @keyframes animate-background {
     from {
         background-position-y: 0px;
     }
     to {
         background-position-y: 200px;
+    }
+}
+
+@keyframes three-dimensional-freaky {
+    0% {
+        transform: perspective(100vw) rotateX(1deg);
+    }
+    100% {
+        transform: perspective(100vw) rotateX(70deg);
     }
 }

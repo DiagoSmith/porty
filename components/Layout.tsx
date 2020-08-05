@@ -9,7 +9,7 @@ type Props = {
 
 const Layout: React.FunctionComponent<Props> = ({ children, title = 'This is the default title' }) => (
     <>
-        <div className={css.hoverboard}></div>
+        <div className={css.hoverboard} />
         <div className={css.wrapper}>
             <Head>
                 <title>{title}</title>
