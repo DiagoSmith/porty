@@ -14,7 +14,11 @@
     background-image: repeating-linear-gradient(rgb(9, 54, 97) 0 2px, transparent 1px 100%),
         repeating-linear-gradient(90deg, rgb(9, 54, 97) 0 2px, transparent 1px 100%);
     background-size: 100px 100px;
-    animation: animate-background linear 1s infinite, three-dimensional-freaky 7s 1 forwards;
+    animation-name: animate-background, three-dimensional-freaky;
+    animation-duration: 1s, 7s;
+    animation-timing-function: linear, linear;
+    animation-iteration-count: infinite, 1;
+    animation-fill-mode: none, forward;
     /* animation: animate-background linear 2s infinite; */
     z-index: -300;
     overflow: hidden;
