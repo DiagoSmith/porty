@@ -18,7 +18,7 @@
     animation-duration: 1s, 7s;
     animation-timing-function: linear, linear;
     animation-iteration-count: infinite, 1;
-    animation-fill-mode: none, forward;
+    animation-fill-mode: none, forwards;
     /* animation: animate-background linear 2s infinite; */
     z-index: -300;
     overflow: hidden;
