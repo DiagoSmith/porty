@@ -1,3 +1,22 @@
+/* FIX-ME: stick to transform otherwise we are gonna have a bad time */
+@keyframes animate-background {
+    from {
+        background-position-y: 0px;
+    }
+    to {
+        background-position-y: 200px;
+    }
+}
+
+@keyframes three-dimensional-freaky {
+    0% {
+        transform: perspective(100vw) rotateX(1deg);
+    }
+    100% {
+        transform: perspective(100vw) rotateX(70deg);
+    }
+}
+
 .wrapper {
     display: flex;
     height: 100vh;
@@ -30,23 +49,4 @@
     border-left: 200px solid transparent;
     border-right: 50px solid transparent;
     border-top: 100px solid red;
-}
-
-/* FIX-ME: stick to transform otherwise we are gonna have a bad time */
-@keyframes animate-background {
-    from {
-        background-position-y: 0px;
-    }
-    to {
-        background-position-y: 200px;
-    }
-}
-
-@keyframes three-dimensional-freaky {
-    0% {
-        transform: perspective(100vw) rotateX(1deg);
-    }
-    100% {
-        transform: perspective(100vw) rotateX(70deg);
-    }
 }
