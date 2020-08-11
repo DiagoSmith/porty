@@ -30,8 +30,8 @@
     height: 100vh;
     /* transform: perspective(100vw); */
     background: black;
-    background-image: repeating-linear-gradient(#093661 0px 2px, transparent 1px 100%),
-        repeating-linear-gradient(90deg, #093661 0px 2px, transparent 1px 100%);
+    background-image: repeating-linear-gradient(#093661 0% 2px, transparent 1px 100%),
+        repeating-linear-gradient(90deg, #093661 0% 2px, transparent 1px 100%);
     background-size: 100px 100px;
     animation-name: animate-background, three-dimensional-freaky;
     animation-duration: 1s, 7s;
